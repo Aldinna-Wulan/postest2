@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Postest 3</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+		}
+
+		.bg {
+			border: solid 1px;
+			background: url("Uad.jpg");
+			background-size: cover;
+			height: 800px;
+		}
+		.for {
+			width: 300px;
+			height: 500px;
+			border: solid 1px #fff;
+			margin: 70px 80px;
+			box-shadow: 0px 0px 6px 2px #44c1eb;
+			background-color: rgba(255, 255, 255, 0.5);
+
+		}
+		.foto {
+			width: 50px;
+			height: 50px;
+			border-radius: 50px;
+			border: solid 0.5px;
+			margin-top: 10px;
+
+		}
+		.in {
+			margin: 7px;
+			height: 24px;
+			border: none;
+			border: solid 0.3px black;	
+			background-color: rgba(255, 255, 255, 0.5);
+
+		}
+		.btn {
+			margin-top: 6px;
+			width: 165px;
+			height: 25px;
+			border-radius: 20px;
+			border: none;
+			background-color: #44c1eb;
+			color: #fff;
+			font-weight: bold;
+
+		}
+		h6 a {
+			text-decoration: none;
+			color: rgb(255, 255, 255);
+		}
+		.dahlan {
+			height: 100px;
+			width: 200px;
+			position: absolute;
+			margin: 200px 500px;
+		}
+		.dahlan h1 {
+			font-style: italic;
+			color: #fff;
+		}
+		.atas {
+			width: auto;
+			height: 25px;
+			background-color: #1e00c7;
+		}
+		.kning {
+			width: auto;
+			height: 5px;
+			background-color: #ffff03;
+		}
+		.teng {
+			margin: 0px 25%;
+		}
+		.teng ul li{
+			display: inline-block;
+			padding: 3px 9px;
+		}
+		.teng ul li a {
+			text-decoration: none;
+			color: #fff;
+			padding: 5px 0px;
+		}
+		.teng ul li a:hover {
+			text-decoration: none;
+			color: #1e00c7;
+			padding: 5px 0;
+			background-color: #ffff03;
+		}
+		.active{
+			text-decoration: none;
+			color: #1e00c7;
+			padding: 5px 0;
+			background-color: #ffff03;
+		}
+		.icon li {
+			display: inline-block;
+			margin-left: 8px;
+		}
+
+		.icon .gg {
+			display: inline-block;
+			margin-top: 5px;
+		}
+		.opt {
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div class="kning"></div>
+		<div class="atas">
+			<div class="teng">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a  href="index.html">Login</a></li>
+					<li><a href="berita.html">Berita</a></li>
+					<li><a href="about.html">Profil</a></li>
+					<li><a class="active" href="">Daftar</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="for">
+			<center>
+				<form action="proses.php" method="POST">
+					<h3>Daftar</h3>
+					<input class="in" type="text" name="nama depan" placeholder="Nama" required>
+					<input class="in" type="text" name="tmpt" placeholder="Tempat lahir" required>
+					<input class="in" type="date" name="tanggal lahir" required><br>
+					<caption>Agama</caption><br>
+					<select class="opt">
+						<option >Islam</option>
+						<option>Kristen</option>
+						<option>Buddha</option>
+						<option>Hindu</option>
+						<option>Konghucu</option>
+					</select><br><br>
+					<label>Gender</label><br>
+					<select class="opt">
+						<option>Laki Laki</option>
+						<option>Perempuan</option>
+						<option>Khusus</option>
+					</select><br><br>
+					<label>Jurusan</label><br>
+					<select class="opt">
+						<option>Teknik Informatika</option>
+						<option>Teknik Elektro</option>
+						<option>Teknik Pangan</option>
+						<option>Teknik Kimia</option>
+						<option>Teknik Industri</option>
+					</select>				<input class="in" type="text" name="nohp" placeholder="Nomor HP" required>
+					<input class="in" type="email" name="email" placeholder="Email" required>
+					<br>
+					<label>Alamat</label><br>
+					<textarea class="in" cols="25" rows="3">
+					</textarea>
+					<input class="btn" type="submit" name="submit" value="Tampilkan">
+				</center>
+				
+				</form>
+				
+		</div>
+			<div class="dahlan">
+				<h3 style="font-family: sans-serif; color: white;">Hello!</h3>
+				<h1>Dahlan Muda</h1>
+			</div>
+	</div>
+</body>
+</html>
